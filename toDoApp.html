@@ -18,8 +18,8 @@
     <div class="containerPrincipal">
         <div class="encabezado">
             <form action="formulario" action="">
-                <input type="text" id="tareaInput" placeholder="Agrega tu tarea">
-                <input type="button" class="boton" id="btn-agregar" value="Agregar">
+                <input type="text" id="tareaInput" placeholder="Agrega tu tarea"> <br>
+                <input type="button" class="boton" id="btn-agregar"  value="Agregar">
             </form>
         </div>
     </div>
@@ -27,9 +27,23 @@
     <div class="Tareas">
         <div class="encabezado">
             <ul class="lista" id="listaTarea">
-                <li> </li>
+                <li id="sincirculo"> </li>
 
-            </ul>
+            </ul> 
+            <div class="seccionTarea"> 
+                <h3>Estas son las Tareas</h3> 
+                <ul id="lista"> 
+                    <li>
+                        <i class="circle" data="realizado" id="0"> </i> 
+                        <p class="text"> Hacer tarea de progra </p> 
+                        <i class="circle" data-="eliminado" id="0"></i>
+                    </li>
+
+                </ul>
+
+                
+
+            </div>
 
         </div>
 
