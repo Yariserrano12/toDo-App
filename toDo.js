@@ -10,3 +10,9 @@ boton.addEventListener("click", function () {
 
   document.getElementById("listaTarea").appendChild(texto);
 });
+
+
+
+
+
+const enter= listaTarea 
