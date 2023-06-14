@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDo.css">
+    <link rel="stylesheet" href="">
     <center>
         <title>TAREAS POR HACER</title>
     </center>
@@ -13,47 +15,47 @@
     <center>
         <h1> <b>TAREAS POR HACER </b></h1>
     </center>
-    <link rel="stylesheet" href="toDo.css">
     <br>
-    <div class="containerPrincipal">
-        <div class="encabezado">
-            <form action="formulario" action="">
-                <input type="text" id="tareaInput" placeholder="Agrega tu tarea"> <br>
-                <input type="button" class="boton" id="btn-agregar"  value="Agregar">
-            </form>
-        </div>
-    </div>
 
-    <div class="Tareas">
-        <div class="encabezado">
-            <ul class="lista" id="listaTarea">
-                <li id="sincirculo"> </li>
-
-            </ul> 
-            <div class="seccionTarea"> 
-                <h3>Estas son las Tareas</h3> 
-                <ul id="lista"> 
-                    <li>
-                        <i class="circle" data="realizado" id="0"> </i> 
-                        <p class="text"> Hacer tarea de progra </p> 
-                        <i class="circle" data-="eliminado" id="0"></i>
-                    </li>
-
-                </ul>
-
-                
-
+    <div class="container">
+        <div class="containerPrincipal">
+            <div class="encabezado">
+                <form action="formulario" action="">
+                    <input type="text" id="tareaInput" placeholder="Agrega tu tarea"> <br>
+                    <input type="button" class="boton" id="btn-agregar" value="Agregar">
+                </form>
             </div>
 
+            <div class="encabezado">
+              
+                <ul id="listaTarea">
+                    <li id="sincirculo" >  </li> <i class="fa-solid fa-trash-can"></i>
+                </ul>
+            </div>
+            <div class="empty"></div> 
+            <p>No hay tareas pendientes</p>
         </div>
 
+        <div class="Tareas">
+            <table >
+                <tr>
+                    <th>
+                        Tareas completadas
+                    </th>
+                </tr>
+            </table>
+            
+        </div>
     </div>
 
+  
 
 
 
 
-    <script src="toDo.js">   </script>
+
+    <script src="toDo.js">   </script> 
+    <script src="https://use.fontawesome.com/ce3d425d9d.js"></script>
 </body>
 
 </html>
