@@ -1,58 +1,57 @@
 const contenedorTareas = document.querySelector("#tareaInput");
 const boton = document.querySelector("#btn-agregar");
-var listaTarea= document.querySelector("listaTarea");
+var listaTarea = document.querySelector("listaTarea");
 
 
 function agregarTarea() {
-  
+
   let tarea = contenedorTareas.value;
 
-  let texto = document.createElement("p");
-  texto.id = "arreglartexto"
-  let inputC= document.createElement("input") 
-  inputC.id = "arreglar check"
-  inputC.setAttribute("type", "checkbox") 
+  if (!tarea == "") {
+    
+    let texto = document.createElement("p");
+    texto.id = "arreglartexto"
+    
+    let inputC = document.createElement("input")
+    inputC.id = "arreglarcheck"
+    inputC.setAttribute("type", "checkbox")
   
-  let eliminar = document.createElement("button") 
-  eliminar.id = "arreglar boton"
-
-  eliminar.textContent="Eliminar";
-
- console.log (eliminar)
-
-
-
-  texto.innerHTML = tarea;
+    let eliminar = document.createElement("button")
+    eliminar.id = "arreglarboton"
+    eliminar.textContent = "Eliminar";
   
-
   
+    texto.innerHTML = tarea;
+    let tabla = document.getElementById("listaTarea")
+    tabla.appendChild(texto)
+    tabla.appendChild(inputC)
+    tabla.appendChild(eliminar)
 
-let tabla= document.getElementById("listaTarea")
-tabla.appendChild(texto)
-tabla.appendChild(inputC)
-tabla.appendChild(eliminar)
+    contenedorTareas.value = "";
+
+  }else{
+    alert("Ingrese una tarea válida");
+  }
+
+}
 
 
 
-  contenedorTareas.value = ""; 
+boton.addEventListener("click", agregarTarea);
 
-
-}; 
-
-
-boton.addEventListener("click",agregarTarea);
-
-contenedorTareas.addEventListener("keypress", function(event) { 
+contenedorTareas.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     agregarTarea();
-  }  
+  }
 
+})
 
-
-}) 
-
-
+function remove_child() {
+  var list = document.getElementById('listaTarea');
+  var item = listaTarea
+  listaTarea.removeChild(item);
+}
 
 
 
