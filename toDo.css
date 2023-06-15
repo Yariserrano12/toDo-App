@@ -79,17 +79,18 @@ h3{
 } 
 
 #arreglartexto{
-margin-left: 40%; 
-margin-top: 10%;
+margin-right: 10%;
+margin-top: -0%;
 } 
 
 #arreglarcheck{ 
-  margin-left: 20%;
+  margin-left: 10%; 
+  margin-top: -10px;
 
 } 
 
 #arreglarboton{ 
-  margin-left: 30%;
+  margin-left:10%;
 
 }
 
