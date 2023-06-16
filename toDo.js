@@ -20,7 +20,7 @@ function agregarTarea() {
 
   let eliminar = document.createElement("button");
   eliminar.id = "arreglarboton";
-  eliminar.textContent = "Eliminar";
+  eliminar.textContent = "Eliminar"; 
 
   texto.innerHTML = tarea;
   tareaLi.appendChild(texto);
@@ -34,7 +34,13 @@ function agregarTarea() {
     let listaT = document.getElementById("listaTarea");
     const i = e.target.parentElement;
     listaT.removeChild(i);
-  });
+  }); 
+
+  mensaje.addEventListener("string", function () {
+    if (condition) {
+      
+    }
+  })
 
   contenedorTareas.value = "";
 
