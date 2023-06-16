@@ -1,5 +1,5 @@
 body {
-  background: rgb(236, 230, 230);
+  background: rgb(239, 206, 206);
   font-family: arial, helvetica, sans-serif;
   border-color: #e4e1e1;
   width: 70%;
@@ -63,7 +63,8 @@ margin-top: 10%;
 
 #letra{
   margin-top: -90%;
-  margin-left: 295%;
+  margin-left: 295%; 
+  color: rgb(154, 147, 147);
 }
 
 #contador{
@@ -98,6 +99,7 @@ h3{
 
 #mensaje{
   margin-top: 0%; 
+  color: rgb(137, 192, 192);
 } 
 
 
